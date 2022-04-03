@@ -65,7 +65,7 @@ def display(country_name):
     selected_data = data[data.Country == country_name]
 
     try:
-        flag_source = ImageTk.PhotoImage(Image.open(f"./flags_240px/{country_name}.png"))
+        flag_source = ImageTk.PhotoImage(Image.open(f"{country_name}.png"))
     except FileNotFoundError:
         flag.config(image=None)
         flag.image = None
